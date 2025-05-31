@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bakery Line</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-color:#8B5D5D;
+    }
+    h1 {
+        font-family:  "Tagesschrift", system-ui;
+        font-weight: bold;
+        font-size: 3rem;
+        text-align: center;
+    }
+    p {
+        font-weight: bold;
+        font-size: xx-large;
+        
+    }
+    .container {
+        display: flex;
+        gap: 50px;
+        justify-content: flex-end;
+        border: 2px solid orangered;
+        background-color:#F0E9E9;
+        border-radius: 60px;
+    }
+    h2 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 5rem;
+    }
+    h3 {
+        font-weight:bolder;
+        font-size: 2rem;
+    }
+    #text {
+        margin-right: auto;
+    }
+    .encloser {
+        display: grid;
+        width:800px;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 200px    
+    }
+    .item {
+        height:300px ;
+        width:300px ;
+        display: flex;
+        position: relative;
+        
+    }
+    .burger {
+        background-color: #4E1F00;
+        
+    }
+    .rolls {
+        background-color: #F8F4E1;
+    }
+    .bread {
+        background-color: #C14600;
+    }
+    button {
+        border-radius:100px ;
+        position: absolute;
+        margin-left: 80%;
+        border: 2px solid orangered;
+    }
+    @media (max-width: 680px) {
+        .container {
+            flex-wrap: wrap;
+            flex-shrink:3;
+        }
+        p {
+            color: blue;
+        }
+        .items {
+            display: block;
+        }
+        }
+    </style>
+    <head>
+         <button>
+            <h3>order here</h3>
+          </button>
+        <h1>BAKE-LINE</h1>
+    </head>
+    <body>
+        <h2></h2>
+        <div class="container">
+            <p id="text">BAKE-LINE</p>
+        <p>location</p>
+        <p>call us</p>
+        <p>Add to cart</p>
+        </div>
+        <h2>Welcome to your Bakery of choice.</h2>
+        <div class="encloser">
+         <div class="item burger"><img src="https://www.allrecipes.com/thmb/5JVfA7MxfTUPfRerQMdF-nGKsLY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/25473-the-perfect-basic-burger-DDMFS-4x3-56eaba3833fd4a26a82755bcd0be0c54.jpg" alt="burger">burger</div>
+         <div class="item rolls"><img src="https://www.melskitchencafe.com/wp-content/uploads/2013/04/Cinnamon-Roll-jpg.jpg" alt="">cinamon rolls</div>
+         <div class="item bread"><img src="https://www.allrecipes.com/thmb/flMX39PAckZCdr7bxYDsuJc6JjY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/23376-cinnamon-swirl-bread-ddmfs-hero-3x4-0811-ce6ebd2d3283478cbf810fb06e87e3d2.jpg" alt="">cinamon bread</div>
+        </div>
+        <button>
+            <h3>order here</h3>
+          </button>
+    </body>
+</html>
